@@ -17,8 +17,7 @@ type Job struct {
 var result []Job
 
 func main() {
-//	Example:  url := "https://jenkinshost.com:8080/view/All/api/json"
-        url := "https://localhost:8080/view/All/api/json"
+	Example:  url := "https://jenkinshost.com:8080/view/All/api/json"
 	req, err := http.NewRequest("GET", url, nil)
 
 	if err != nil {
@@ -47,7 +46,7 @@ func main() {
 		}
 	}
 	for _, j := range result {
-			fmt.Println(j.name)
+		fmt.Println(j.name)
 	}
 }
 
